@@ -1,0 +1,325 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #f3f3f3;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Header */
+
+header .content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 5.31rem;
+  justify-content: space-between;
+}
+
+.content .desktop {
+  font-family: "Roboto", sans-serif;
+}
+
+.desktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1.87rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #4A4A4A;
+}
+
+.desktop ul {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 4rem;
+}
+
+.desktop ul li a {
+  font-size: 1rem;
+  color: #4A4A4A;
+  line-height: 1.6;
+  font-family: 'Roboto';
+}
+
+.desktop .icon {
+  height: 1rem;
+  width: 1rem;
+  padding-left: 0.2rem;
+}
+
+.mobile {
+  display: none;
+}
+
+/* first div */
+
+.banner {
+  display: flex;
+  background-image: url(banner-landingpage.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 45.5rem;
+}
+
+#sign-up-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-content: center; */
+  justify-content: center;
+  height: 22.27rem;
+  width: 35.75rem;
+  background-color: #9DC20A;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  margin-top: 10.62rem;
+  margin-left: 6.25rem;
+}
+
+#sign-up-cta .cursive {
+  font-family: 'Damion', cursive;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+#sign-up-cta .striking {
+  font-family: 'Rubik', cursive;
+  color: white;
+  font-size: 3rem;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+
+#sign-up-cta .email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+
+#sign-up-cta .button {
+  display: flex;
+  justify-content: center;
+  width: 10rem;
+  font-family: 'Roboto', cursive;
+  font-size: 1.25rem;
+  color: white;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  background-color: #4A4A4A;
+  padding: 1.5rem 6rem;
+  width: 17rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* features section */
+
+.features-section {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 38.68rem;
+  background-color: #f3f3f3;
+  width: 100%;
+}
+
+.features-section .feature {
+  background-color: white;
+  height: 32rem;
+  width: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.features-section .feature img {
+  width: 90%;
+  height: auto;
+}
+
+.features-section .feature h2 {
+  color: #4A4A4A;
+  font-size: 2rem;
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 1.2;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.features-section .feature h3 {
+  color: #4A4A4A;
+  font-size: 1.3rem;
+  font-family: "Roboto";
+  font-weight: lighter;
+  line-height: 1.2;
+  padding: 0rem 1rem;
+}
+
+/* filters section */
+
+#filters-section {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  width: 100%;
+  background-color: #4A4A4A;
+  align-items: center;
+  justify-content: center;
+}
+
+#filters-section .content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+#filters-section .content h2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  opacity: 100%;
+  font-size: 2rem;
+  font-family: 'Roboto';
+  font-weight: bolder;
+  padding-bottom: 0.3rem;
+}
+
+#filters-section .content h3 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  opacity: 100%;
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  font-weight: lighter;
+}
+
+#filters-section .images-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  column-gap: 4px;
+}
+
+#filters-section .images-container img {
+  height: 15.1rem;
+  width: 15.1rem;
+}
+
+/* Quotes Section */
+
+#quotes-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 12.5rem;
+}
+
+#quotes-section span {
+  color:#4A4A4A;
+  font-size: 2rem;
+  font-family: 'Palatino';
+  font-style: italic;
+  line-height: 1.1;
+  margin-left: 10rem;
+}
+
+#quotes-section span img {
+  margin-left: 20px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  background-color: #9B9B9B;
+}
+
+footer .content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer .content span {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Roboto';
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+
+
